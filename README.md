@@ -20,10 +20,9 @@ to build Angular components, services, pipes, directives and more.
 ## Running the Application
 
 npm install  --prefix ./ -g @angular/cli
+
 npm install  --prefix ./
+
 ng test --no-watch --code-coverage
+
 ng build --prod
-
-
-Triggering webhook events
-test 2
