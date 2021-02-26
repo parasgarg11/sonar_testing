@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-hello-world": {
+    "sonar_testing": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -48,18 +48,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-hello-world:build"
+            "browserTarget": "sonar_testing:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-hello-world:build:production"
+              "browserTarget": "sonar_testing:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-hello-world:build"
+            "browserTarget": "sonar_testing:build"
           }
         },
         "test": {
@@ -93,7 +93,7 @@
         }
       }
     },
-    "angular-hello-world-e2e": {
+    "sonar_testing-e2e": {
       "root": "",
       "sourceRoot": "",
       "projectType": "application",
@@ -102,7 +102,7 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "./protractor.conf.js",
-            "devServerTarget": "angular-hello-world:serve"
+            "devServerTarget": "sonar_testing:serve"
           }
         },
         "lint": {
@@ -119,7 +119,7 @@
       }
     }
   },
-  "defaultProject": "angular-hello-world",
+  "defaultProject": "sonar_testing",
   "schematics": {
     "@schematics/angular:class": {
       "spec": false
